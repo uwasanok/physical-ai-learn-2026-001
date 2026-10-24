@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": [
+    "3 ordered waypoint arrivals within 0.10 m",
+    "8 authored holdout instructions classified correctly",
+    "3 selected unknown commands rejected",
+    "MP4 duration within 60-180 seconds",
+    "recorded trajectory moved across both axes",
+    "zero commanded velocity for stop/unknown after return",
+    "stationary drift below 0.02 m",
+    "Gazebo camera messages received"
+  ],
+  "stationary_drift_m": 0.0,
+  "video": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 800
+      }
+    ],
+    "format": {
+      "duration": "75.100000"
+    }
+  }
+}

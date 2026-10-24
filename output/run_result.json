@@ -1,0 +1,120 @@
+{
+  "success": true,
+  "failure": null,
+  "goals": [
+    {
+      "intent": "inspection",
+      "position": [
+        1.9002825253087916,
+        2.234477026052134e-13
+      ],
+      "error_m": 0.0997174746912084
+    },
+    {
+      "intent": "supply",
+      "position": [
+        1.9982571860281535,
+        1.7013000365203734
+      ],
+      "error_m": 0.09871534932025562
+    },
+    {
+      "intent": "home",
+      "position": [
+        0.07373796808886321,
+        0.0662063035550831
+      ],
+      "error_m": 0.09909875159810046
+    }
+  ],
+  "events": [
+    {
+      "time": 0.0,
+      "event": "recording_started"
+    },
+    {
+      "time": 8.052,
+      "event": "instruction",
+      "text": "点検エリアへ移動してください",
+      "intent": "inspection",
+      "confidence": 0.8157344877359703,
+      "goal": [
+        2.0,
+        0.0
+      ]
+    },
+    {
+      "time": 16.801,
+      "event": "arrived",
+      "intent": "inspection",
+      "position": [
+        1.9002825253087916,
+        2.234477026052134e-13
+      ],
+      "error_m": 0.0997174746912084
+    },
+    {
+      "time": 20.839,
+      "event": "instruction",
+      "text": "備品の場所まで進んでください",
+      "intent": "supply",
+      "confidence": 0.7760288918868197,
+      "goal": [
+        2.0,
+        1.8
+      ]
+    },
+    {
+      "time": 29.851,
+      "event": "arrived",
+      "intent": "supply",
+      "position": [
+        1.9982571860281535,
+        1.7013000365203734
+      ],
+      "error_m": 0.09871534932025562
+    },
+    {
+      "time": 33.972,
+      "event": "instruction",
+      "text": "ホームに戻ってください",
+      "intent": "home",
+      "confidence": 0.9057684001976174,
+      "goal": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time": 47.302,
+      "event": "arrived",
+      "intent": "home",
+      "position": [
+        0.07373796808886321,
+        0.0662063035550831
+      ],
+      "error_m": 0.09909875159810046
+    },
+    {
+      "time": 51.347,
+      "event": "instruction",
+      "text": "ダンスを踊って",
+      "intent": "unknown",
+      "confidence": 0.41073563290228493,
+      "goal": null
+    },
+    {
+      "time": 58.41,
+      "event": "instruction",
+      "text": "いったん停止してください",
+      "intent": "stop",
+      "confidence": 0.8415742449857458,
+      "goal": null
+    }
+  ],
+  "video_duration_s": 75.1,
+  "camera_messages": 698,
+  "controller": "proportional waypoint controller; AI classifies text, does not learn motion",
+  "odometry_source": "Gazebo OdometryPublisher ground truth; ideal localization, not wheel encoders or SLAM",
+  "environment": "obstacle-free simulated floor; no cleaning manipulation implemented"
+}

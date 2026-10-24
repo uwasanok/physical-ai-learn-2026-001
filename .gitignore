@@ -1,0 +1,10 @@
+logs/
+output/frames/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.key

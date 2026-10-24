@@ -1,0 +1,15 @@
+services:
+  sim:
+    build: .
+    image: physical-ai-step1:jazzy
+    container_name: physical-ai-step1
+    init: true
+    shm_size: 2gb
+    ports:
+      - "127.0.0.1:6080:6080"
+      - "127.0.0.1:8889:8888"
+    volumes:
+      - .:/work
+    environment:
+      - ROS_DOMAIN_ID=42
+      - ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST

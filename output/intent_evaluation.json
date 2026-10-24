@@ -1,0 +1,75 @@
+{
+  "training_examples": 40,
+  "test_examples": 8,
+  "correct": 8,
+  "test": [
+    {
+      "text": "点検エリアへ移動してください",
+      "expected": "inspection",
+      "predicted": "inspection",
+      "confidence": 0.8157344877359703
+    },
+    {
+      "text": "点検地点で待って",
+      "expected": "inspection",
+      "predicted": "inspection",
+      "confidence": 0.9479066997122907
+    },
+    {
+      "text": "備品の場所まで進んでください",
+      "expected": "supply",
+      "predicted": "supply",
+      "confidence": 0.7760288918868197
+    },
+    {
+      "text": "備品エリアに行きたい",
+      "expected": "supply",
+      "predicted": "supply",
+      "confidence": 0.9290687320198966
+    },
+    {
+      "text": "ホームに戻ってください",
+      "expected": "home",
+      "predicted": "home",
+      "confidence": 0.9057684001976174
+    },
+    {
+      "text": "出発地点に帰りたい",
+      "expected": "home",
+      "predicted": "home",
+      "confidence": 0.8892813480691507
+    },
+    {
+      "text": "いったん停止してください",
+      "expected": "stop",
+      "predicted": "stop",
+      "confidence": 0.8415742449857458
+    },
+    {
+      "text": "ここで止まって",
+      "expected": "stop",
+      "predicted": "stop",
+      "confidence": 0.8097898907642253
+    }
+  ],
+  "out_of_domain": [
+    {
+      "text": "こんにちは",
+      "predicted": "unknown",
+      "confidence": 0.31701621805750807
+    },
+    {
+      "text": "明日の天気は",
+      "predicted": "unknown",
+      "confidence": 0.40642609746352515
+    },
+    {
+      "text": "ダンスを踊って",
+      "predicted": "unknown",
+      "confidence": 0.41073563290228493
+    }
+  ],
+  "threshold": 0.6,
+  "seed": 42,
+  "limitation": "Small authored holdout, vocabulary close to training. Not general Japanese understanding."
+}
